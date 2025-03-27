@@ -1,0 +1,63 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid red;
+}
+
+.nav_item {
+    margin: 0 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    height: 90vh;
+    border: 1px solid blue;
+}
+
+.container_item {
+    display: flex;
+    border: 1px solid green;
+}
+
+/* Left Column */
+#column1 {
+    flex: 1.2;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+}
+#name{
+
+}
+#description{
+
+}
+.contact_container{
+    display: flex;
+    border: 1px red solid;
+}
+.contact_img{
+    width: 50px;
+    height: 50px;
+}
+
+/* Right Column */
+#column2 {
+    flex: 0.8;
+    align-items: center;
+    padding-left: 1rem;
+}
