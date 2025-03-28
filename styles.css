@@ -1,57 +1,58 @@
-/* Global Styles */
-body {
+
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 0;
+  }
+  
+  html, body {
+    width: 100%;
+    max-width: 100%;
     font-family: "Poppins", sans-serif;
 }
-header{
-    position: sticky;
-    top:0;
-    z-index: 69;
-    background-color: antiquewhite;
-    border-radius: 10px;
-}
-/* Navigation Bar */
-.navbar {
-    padding: 0.5rem 1rem;
-}
-
-/* Main Container */
-.vh-90 {
-    height: 90vh; /* Keep full viewport height */
-}
-
-/* Left Column */
-#column1 {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-}
-
-#description {
+  
+img, video, .container, #home, #techstack, #project, #contact {
     max-width: 100%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    height: auto;
 }
 
-/* Contact Container */
-.contact_img {
-    width: 50px;
-    height: 50px;
-}
-.techstack_img{
-    width: 100px;
-    height: 100px;
-}
+  /* Container adjustments */
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  /* Header fixes */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 69;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+  }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .vh-90 {
-        height: auto; /* Adjust height for mobile */
+  
+  /* Main content area */
+  main.container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    main.container-fluid {
+      padding-left: 15px;
+      padding-right: 15px;
     }
-    body {
-        padding-left: 3%;
-        padding-right: 3%;
+    
+    .min-vh-100 {
+      min-height: 100vh;
     }
-}
+  }
+  
+
+ .border {
+    border: red 1px solid;
+  } 

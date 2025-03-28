@@ -14,16 +14,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6638bece79.js" crossorigin="anonymous"></script>
+    <link rel ="stylesheet" href = "styles.css">
 </head>
 <body>
 
     <!-- Navigation -->
-    <header>
+    <header class >
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <!-- Brand / Logo (Optional) -->
-                <a class="navbar-brand" href="#">Portfolio</a>
+                <a class="navbar-brand" href="#">JRDUMLAO</a>
 
                 <!-- Hamburger Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -36,7 +37,7 @@
                         <a class="nav-link" href="#home">Home</a>
                         <a class="nav-link" href="#techstack">Techstack</a>
                         <a class="nav-link" href="#projects">project</a>
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -45,24 +46,24 @@
 
     <!-- Main Content -->
 <main id = "home" class="container-fluid">
-    <div class="row min-vh-100 border border-primary align-items-center">
+    <div class="row min-vh-100 align-items-center">
         <!-- Right Column (Image) - Moves Above on Small Screens -->
-        <div class="col-md-5 d-flex justify-content-center align-items-center border border-success p-3 order-1 order-md-2">
+        <div class="col-md-5 col-12 d-flex justify-content-center align-items-center order-1 order-md-2">
             <img src="https://placehold.co/256x256" class="img-fluid" alt="Profile Image Placeholder">
         </div>
 
         <!-- Left Column (Text) -->
-        <div class="col-md-7 d-flex flex-column justify-content-center border border-success p-3 order-2 order-md-1">
+        <div class="col-md-7 col-12 d-flex flex-column justify-content-center p-3 order-2 order-md-1">
             <h1 id="name">Hi! I'm Jhenn Rod</h1>
             <p id="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum, nunc felis feugiat libero, ac suscipit odio risus at elit.
+                Passionate BS Computer Science student with hands-on experience in web development, mobile applications, and game development. Eager to apply my problem-solving skills and technical expertise in a professional IT environment while contributing to innovative projects and expanding my knowledge.
             </p>
-            <div class="d-flex border border-danger">
-                <img class="contact_img m-1" src="https://placehold.co/256x256" alt="Placeholder">
-                <img class="contact_img m-1" src="https://placehold.co/256x256" alt="Placeholder">
-                <img class="contact_img m-1" src="https://placehold.co/256x256" alt="Placeholder">
+            <div class="d-flex">
+                <i class="fab fa-github fa-2x p-1"></i>
+                <i class="fab fa-linkedin fa-2x p-1"></i>
+                <i class="fab fa-facebook fa-2x p-1"></i>
             </div>
-            <button class="btn btn-primary mt-3 btn-sm align-self-start">Contact Me</button>
+            <a href="#contact" class="btn btn-primary mt-3 btn-sm align-self-start">Contact Me</a>
         </div>
     </div>
 </main>
@@ -72,40 +73,45 @@
         <!-- Programming Languages -->
         <h1 class="text-center">Tech Stack</h1>
         <h2 class="text-center mt-4">Languages</h2>
-        <div class="row d-flex flex-wrap justify-content-center border border-success p-3">
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+        <div class="row d-flex flex-wrap justify-content-center p-3">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Python">
                 <p class="text-center">Python</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Java">
                 <p class="text-center">Java</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="row d-flex flex-wrap justify-content-center p-3">
+                <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
+                    <img class="img-fluid" src="https://placehold.co/256x256" alt="MySQL">
+                    <p class="text-center">HTML/CSS</p>
+                </div>
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="HTML/CSS/JS">
-                <p class="text-center">HTML/CSS/JavaScript</p>
+                <p class="text-center">JavaScript</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="PHP">
                 <p class="text-center">PHP</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="C#">
                 <p class="text-center">C#</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Kotlin">
                 <p class="text-center">Kotlin</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Visual Basic">
                 <p class="text-center">Visual Basic</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="C">
                 <p class="text-center">C</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Dart">
                 <p class="text-center">Dart</p>
             </div>
@@ -113,20 +119,20 @@
     
         <!-- Frameworks -->
         <h2 class="text-center mt-4">Frameworks/IDE/Engine</h2>
-        <div class="row d-flex flex-wrap justify-content-center border border-success p-3">
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+        <div class="row d-flex flex-wrap justify-content-center p-3">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Flutter">
                 <p class="text-center">Flutter</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Android Studio">
                 <p class="text-center">Android Studio</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Godot">
                 <p class="text-center">Godot</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="VB.net">
                 <p class="text-center">VB.net</p>
             </div>
@@ -134,16 +140,15 @@
     
         <!-- Others -->
         <h2 class="text-center mt-4">Others</h2>
-        <div class="row d-flex flex-wrap justify-content-center border border-success p-3">
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="MySQL">
                 <p class="text-center">MySQL</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Vscode">
                 <p class="text-center">Visual Studio Code</p>
             </div>
-            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center border border-success rounded shadow-sm">
+            <div class="col-6 col-sm-4 col-lg-3 p-3 d-flex flex-column align-items-center rounded shadow-sm">
                 <img class="img-fluid" src="https://placehold.co/256x256" alt="Git">
                 <p class="text-center">Git</p>
             </div>
@@ -159,8 +164,8 @@
         <div class="row">
             <!-- Project Item -->
             <div class="col-12 col-md-6 mb-4">
-                <div class="card border-success text-center p-3 h-100 d-flex flex-column">
-                    <div class="border border-dark rounded p-3 flex-grow-1">
+                <div class="card text-center p-3 h-100 d-flex flex-column">
+                    <div class="rounded p-3 flex-grow-1">
                         <img class="img-fluid rounded mb-3" src="https://placehold.co/720x480" alt="Project Image">
                         <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -168,16 +173,16 @@
             </div>
             <!-- Project Item -->
             <div class="col-12 col-md-6 mb-4">
-                <div class="card border-success text-center p-3 h-100 d-flex flex-column">
-                    <div class="border border-dark rounded p-3 flex-grow-1">
+                <div class="card text-center p-3 h-100 d-flex flex-column">
+                    <div class="rounded p-3 flex-grow-1">
                         <img class="img-fluid rounded mb-3" src="https://placehold.co/720x480" alt="Project Image">
                         <p class="mb-0">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaSed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 mb-4">
-                <div class="card border-success text-center p-3 h-100 d-flex flex-column">
-                    <div class="border border-dark rounded p-3 flex-grow-1">
+                <div class="card text-center p-3 h-100 d-flex flex-column">
+                    <div class="rounded p-3 flex-grow-1">
                         <img class="img-fluid rounded mb-3" src="https://placehold.co/720x480" alt="Project Image">
                         <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -185,16 +190,16 @@
             </div>
             <!-- Project Item -->
             <div class="col-12 col-md-6 mb-4">
-                <div class="card border-success text-center p-3 h-100 d-flex flex-column">
-                    <div class="border border-dark rounded p-3 flex-grow-1">
+                <div class="card text-center p-3 h-100 d-flex flex-column">
+                    <div class="rounded p-3 flex-grow-1">
                         <img class="img-fluid rounded mb-3" src="https://placehold.co/720x480" alt="Project Image">
                         <p class="mb-0">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaSed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 mb-4">
-                <div class="card border-success text-center p-3 h-100 d-flex flex-column">
-                    <div class="border border-dark rounded p-3 flex-grow-1">
+                <div class="card text-center p-3 h-100 d-flex flex-column">
+                    <div class="rounded p-3 flex-grow-1">
                         <img class="img-fluid rounded mb-3" src="https://placehold.co/720x480" alt="Project Image">
                         <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -202,8 +207,8 @@
             </div>
             <!-- Project Item -->
             <div class="col-12 col-md-6 mb-4">
-                <div class="card border-success text-center p-3 h-100 d-flex flex-column">
-                    <div class="border border-dark rounded p-3 flex-grow-1">
+                <div class="card text-center p-3 h-100 d-flex flex-column">
+                    <div class="rounded p-3 flex-grow-1">
                         <img class="img-fluid rounded mb-3" src="https://placehold.co/720x480" alt="Project Image">
                         <p class="mb-0">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Sed do eiusmod tempor incididunt ut labore et dolore magna aliquaSed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                     </div>
@@ -212,13 +217,38 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
+<hr>
+<section id = "contact">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">&copy; 2025 JR DUMLAO. All Rights Reserved.</p>
+</footer>
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
