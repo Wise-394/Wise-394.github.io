@@ -11,11 +11,13 @@
     font-family: "Poppins", sans-serif;
 }
   
-img, video, .container, #home, #techstack, #project, #contact {
+img, video, .container, .home, #techstack, #projects, #contact, footer {
     max-width: 100%;
     height: auto;
 }
-
+.content-wrapper {
+    overflow-x: hidden;
+}
   /* Container adjustments */
   .container-fluid {
     padding-left: 15px;
