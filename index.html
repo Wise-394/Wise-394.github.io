@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <!-- Brand / Logo (Optional) -->
-                <a class="navbar-brand" href="#">JRDUMLAO</a>
+                <a class="navbar-brand" href="#">JR</a>
 
                 <!-- Hamburger Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -46,19 +46,32 @@
             </div>
         </nav>
     </header>
-
-    <!-- Main Content -->
-    <main id="home" class="container-fluid content-wrapper">
-        <div class="row min-vh-100 align-items-center">
-            <!-- Right Column (Image) - Moves Above on Small Screens -->
+    <main id="home" class="container-fluid content-wrapper position-relative">
+        <!-- Animated Lines Background -->
+        <div class="lines position-absolute top-0 start-0 w-100 h-100">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    
+        <!-- Content (Ensures it's above lines) -->
+        <div class="row min-vh-100 align-items-center position-relative z-2">
+            <!-- Right Column (Image) -->
             <div class="col-md-5 col-12 d-flex justify-content-center align-items-center order-1 order-md-2">
                 <img src="https://placehold.co/256x256" class="img-fluid" alt="Profile Image Placeholder">
             </div>
-
+    
             <!-- Left Column (Text) -->
             <div class="col-md-7 col-12 d-flex flex-column justify-content-center p-3 order-2 order-md-1">
                 <h1 id="name">Hi! I'm Jhenn Rod</h1>
-                <p id="description" class = "justify">
+                <p id="description" class="text-justify">
                     Passionate BS Computer Science student with hands-on experience in web development, mobile
                     applications, and game development. Eager to apply my problem-solving skills and technical expertise
                     in a professional IT environment while contributing to innovative projects and expanding my
@@ -75,6 +88,7 @@
             </div>
         </div>
     </main>
+    
     <hr>
     <section id="techstack" class="content-wrapper ps-5 pe-5">
         <section id="techstack" class="content-wrapper">
@@ -220,7 +234,7 @@
                                 <b class="d-block">Calculator++</b>
                                 <img class="img-fluid rounded mb-3" src="res/img/calculator_plus.png"
                                     alt="Project Image">
-                                <p class="mb-0 justify">An Android application with a hidden notes feature. The calculator works
+                                <p class="mb-0 ">An Android application with a hidden notes feature. The calculator works
                                     like an ordinary calculator that can perform arithmetic operations but once the user
                                     entered his secret pin then it will go to the hidden notes screen where there user
                                     can
