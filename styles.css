@@ -19,6 +19,8 @@
 }
 
 html, body {
+  margin: 0;
+  padding: 0;
   width: 100%;
   max-width: 100%;
   font-family: "Poppins", sans-serif;
@@ -61,7 +63,9 @@ img, video, .container, .home, #techstack, #projects, #contact, footer {
   max-width: 100%;
   height: auto;
 }
-
+.justify{
+  text-align: justify;
+}
 .content-wrapper {
   overflow-x: hidden;
 }
@@ -137,3 +141,6 @@ button:hover {
   background-color: var(--secondary-accent);
 }
 
+.techstack_item{
+  border: white 1px solid;
+}
