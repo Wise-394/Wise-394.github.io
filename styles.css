@@ -143,18 +143,37 @@ span, .highlight{
 
 /* ================= MAIN CONTENT ================= */
 @keyframes gradientAnimation {
-  0% { background-position: 0% 50%; filter: hue-rotate(0deg) brightness(90%); }
-  50% { background-position: 100% 50%; filter: hue-rotate(5deg) brightness(85%); }
-  100% { background-position: 0% 50%; filter: hue-rotate(0deg) brightness(90%); }
+  0% { 
+    background-position: 0% 50%; 
+    filter: brightness(90%) saturate(100%);
+  }
+  25% { 
+    background-position: 50% 50%; 
+    filter: brightness(95%) saturate(120%);
+  }
+  50% { 
+    background-position: 100% 50%; 
+    filter: brightness(85%) saturate(130%);
+  }
+  75% { 
+    background-position: 50% 50%; 
+    filter: brightness(95%) saturate(150%);
+  }
+  100% { 
+    background-position: 0% 50%; 
+    filter: brightness(90%) saturate(100%);
+  }
 }
 
 #home {
   position: relative;
   background: linear-gradient(135deg, #0a0a0a, #161616, #012A36, #0055AA);
   background-size: 400% 400%;
-  animation: gradientAnimation 10s ease-in-out infinite;
+  animation: gradientAnimation 6s ease-in-out infinite;
   overflow: hidden;
+  height: 100vh; /* Optional: ensures it fills the entire viewport */
 }
+
 
 
 
@@ -199,9 +218,12 @@ span, .highlight{
 
 
 /* ================= ELEMENT STYLES ================= */
-img, video, .container, .home, #techstack, #projects, #contact, footer {
+img, video, .container, .home, #techstack, #projects, #contact, footer, .techstack_img {
   max-width: 100%;
   height: auto;
+}
+.techstack_img{
+  height: 280px;
 }
 
 .justify {
@@ -209,11 +231,28 @@ img, video, .container, .home, #techstack, #projects, #contact, footer {
 }
 
 .card {
+  transition: transform 0.3s ease;
   background-color: var(--card-bg);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 4px 6px var(--border-shadow);
   color: var(--text-color);
+  overflow: hidden;
+}
+
+.card .content {
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.card:hover .content {
+  transform: scale(1.05); 
+}
+.card:active .content {
+  transform: scale(1.05);
+}
+.underline{
+  text-decoration: underline;
 }
 
 /* ================= BUTTONS ================= */
@@ -241,39 +280,6 @@ button:hover {
   border: 1px solid var(--danger-red);
 }
 
-/* ================= LINES ANIMATION ================= */
-.lines {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  margin: auto;
-  width: 90vw;
-  display: flex;
-  justify-content: space-between;
-}
-
-.line {
-  position: relative;
-  width: 1px;
-  height: 100%;
-  overflow: hidden;
-}
-
-.line::after {
-  content: '';
-  display: block;
-  position: absolute;
-  height: 15vh;
-  width: 100%;
-  top: -50%;
-  left: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-  animation: drop 7s 0s infinite;
-  animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-}
 
 
 .line:nth-child(1)::after { background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--secondary-accent) 75%, #FF4500 100%); animation-delay: 0.5s; }
@@ -390,3 +396,5 @@ button:hover {
     --border-angle: 1turn;
   }
 }
+
+
