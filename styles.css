@@ -224,6 +224,7 @@ img, video, .container, .home, #techstack, #projects, #contact, footer, .techsta
 }
 .techstack_img{
   height: 280px;
+  object-fit: contain;
 }
 
 .justify {
