@@ -75,15 +75,15 @@ header {
   z-index: 100;
   width: 100%;
   padding: 12px 0;
-  background: rgba(30, 30, 30, 0.85); /* Semi-transparent glass effect */
-  backdrop-filter: blur(10px); /* Frosted Glass Effect */
+  background: rgba(30, 30, 30, 0.85); 
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 header:hover {
-  background: rgba(30, 30, 30, 0.95); /* Slightly darker on hover */
+  background: rgba(30, 30, 30, 0.95); 
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.5);
 }
 
@@ -104,7 +104,7 @@ header * {
 
 .nav-link:hover {
   color: var(--primary-accent) !important;
-  transform: scale(1.05); /* Slight pop effect */
+  transform: scale(1.05);
 }
 
 /* Navbar brand/logo */
@@ -171,7 +171,7 @@ span, .highlight{
   background-size: 400% 400%;
   animation: gradientAnimation 6s ease-in-out infinite;
   overflow: hidden;
-  height: 100vh; /* Optional: ensures it fills the entire viewport */
+  height: 100vh; 
 }
 
 
@@ -191,8 +191,8 @@ span, .highlight{
   position: absolute;
   width: 100px;
   height: 100px;
-  background: rgba(0, 255, 255, 0.15); /* Soft cyan glow */
-  border-radius: 10px; /* Slightly rounded edges */
+  background: rgba(0, 255, 255, 0.15); 
+  border-radius: 10px; 
   filter: blur(10px);
   opacity: 0.8;
   animation: floatAnimation 18s infinite ease-in-out alternate,
@@ -254,6 +254,9 @@ img, video, .container, .home, #techstack, #projects, #contact, footer, .techsta
 }
 .underline{
   text-decoration: underline;
+}
+link{
+  color: var(--primary-accent)
 }
 
 /* ================= BUTTONS ================= */
@@ -373,29 +376,38 @@ button:hover {
     #1E1E1E 60%, 
     #1E1E1E 60% 
   );
-  
 
-  border: solid 5px transparent;
+  border: solid 5px transparent; 
   border-radius: 2em;
   
   --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #4a90e2, var(--primary-accent) 99%, transparent);
 
+  background: var(--main-bg) padding-box;
   
+  animation: bg-spin 3s linear infinite;
+  animation-play-state: paused;
+}
+
+
+.animated-border:hover,
+.animated-border:focus,
+.animated-border:active {
+  border-color: transparent; 
   background: 
     var(--main-bg) padding-box, 
     var(--gradient-border) border-box, 
     var(--main-bg) border-box; 
-
-  background-position: center center;
-
-  animation: bg-spin 3s linear infinite;
+  animation-play-state: running;
 }
 
-
 @keyframes bg-spin {
+  from {
+    --border-angle: 0turn;
+  }
   to {
     --border-angle: 1turn;
   }
 }
+
 
 
