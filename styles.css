@@ -263,10 +263,10 @@ link{
 
 /* ================= BUTTONS ================= */
 button {
-  background-color: var(--primary-accent);
-  color: var(--background-color);
+  background-color: transparent;
+  color: var(--primary-accent);
   padding: 10px 20px;
-  border: none;
+  border: 1px solid var(--primary-accent);
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
