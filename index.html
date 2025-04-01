@@ -28,7 +28,7 @@
         AOS.init();
     </script>
     <!-- Navigation -->
-    <header id = "header">
+    <header id="header">
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">JR</a>
@@ -188,18 +188,18 @@
             <div class="row">
                 <!-- Project Item -->
                 <div class="col-12 col-md-6 mb-4">
-                    <div class="card text-center p-3 h-100 d-flex flex-column animated-border" data-aos="zoom-in"
-                        data-aos-duration="1200">
-                        <div class="content rounded p-3 flex-grow-1">
-                            <b class="d-block highlight">KNIGHT ADVENTURE</b>
-                            <img class="img-fluid rounded mb-3 techstack_img" src="res/img/knight_adventure1.gif"
-                                alt="Knight Adventure Gif">
-                            <p class="mb-0 justify"> Knight Adventure is a 2d side-scroller platformer game where
-                                you will
-                                play
-                                as a knight doing quest. </p>
+                    <a href=".//res/template.html">
+                        <div class="card text-center p-3 h-100 d-flex flex-column animated-border" data-aos="zoom-in"
+                            data-aos-duration="1200">
+                            <div class="content rounded p-3 flex-grow-1">
+                                <b class="d-block highlight">KNIGHT ADVENTURE</b>
+                                <img class="img-fluid rounded mb-3 techstack_img" src="res/img/knight_adventure1.gif"
+                                    alt="Knight Adventure Gif">
+                                <p class="mb-0 justify"> Knight Adventure is a 2d side-scroller platformer game where
+                                    you will play as a knight doing quests. </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <!-- Project Item -->
                 <div class="col-12 col-md-6 mb-4">
@@ -246,36 +246,38 @@
                 <div class="text-center mt-4">
                     <i class="fa-solid fa-ellipsis"></i>
                     <p>Explore more of my projects on my <a href="" target="_blank" class="align-items-center"><i
-                        class="fab fa-github fa-2x p-1"></i>GitHub repository.</a></p>
+                                class="fab fa-github fa-2x p-1"></i>GitHub repository.</a></p>
                 </div>
 
     </section>
     <hr>
     <section id="contact" class="content-wrapper">
         <div class="container mt-5">
-            <h2 class="text-center mb-4">Contact Me</h2>
+            <h2 class="text-center mb-4" data-aos="fade-up" data-aos-duration="1200">Contact Me</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form action = "https://api.web3forms.com/submit" method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="205bc52f-e9fe-46c0-bdc8-387c29554c94">
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos="fade-left" data-aos-duration="1200">
                             <label for="name" class="form-label">Name</label>
                             <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos="fade-right" data-aos-duration="1200">
                             <label for="email" class="form-label">Email</label>
                             <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos="fade-left" data-aos-duration="1200">
                             <label for="subject" class="form-label">Subject</label>
-                            <input name = "subject"type="text" class="form-control" id="subject" placeholder="Subject">
+                            <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos="fade-right" data-aos-duration="1200">
                             <label for="message" class="form-label">Message</label>
-                            <textarea name = "message" class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                            <textarea name="message" class="form-control" id="message" rows="4"
+                                placeholder="Your Message"></textarea>
                         </div>
                         <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                        <button type="submit" class=" w-100">Send Message</button>
+                        <button type="submit" class=" w-100" data-aos="zoom-in" data-aos-duration="1200">Send
+                            Message</button>
                     </form>
                 </div>
             </div>
@@ -304,7 +306,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript -->
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>

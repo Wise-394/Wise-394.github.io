@@ -13,6 +13,8 @@ html, body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
+  scrollbar-color: var(--primary-accent) var(--background-color);
+  scrollbar-width: thin;
 }
 
 /* ================= COLOR PALETTE ================= */
@@ -280,7 +282,7 @@ button:hover {
 }
 
 /* ================= DEBUGGING ================= */
-.border {
+.debug {
   border: 1px solid var(--danger-red);
 }
 
@@ -410,4 +412,11 @@ button:hover {
 }
 
 
+/* ================= TEMPLATE CUSTOM CSS ================= */
+.template_container{
 
+}
+#template_img{
+  max-height: 400px;
+  object-fit: contain;
+}
