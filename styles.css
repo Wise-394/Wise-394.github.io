@@ -175,6 +175,9 @@ span, .highlight{
   overflow: hidden;
   height: 100vh; 
 }
+#pfp{
+  max-height: 256px;
+}
 
 
 
